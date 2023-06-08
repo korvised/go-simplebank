@@ -11,7 +11,7 @@ import (
 
 const (
 	dbDriver = "postgres"
-	dbSource = "postgres://hgwcsfjz:KrQGnHXbGTAuGetdYyb9HCkjduxRLsMJ@babar.db.elephantsql.com/hgwcsfjz"
+	dbSource = "postgres://jiyjectu:rw96Pl0VfOn5mp2T3fG1vKHEKFMJdAVg@babar.db.elephantsql.com/jiyjectu"
 )
 
 var testQueries *Queries

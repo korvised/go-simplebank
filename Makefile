@@ -8,10 +8,10 @@ dropdb:
 	docker exec -it postgres12 dropdb simple_bank
 
 migrateup:
-	migrate -path db/migration -database "postgres://hgwcsfjz:KrQGnHXbGTAuGetdYyb9HCkjduxRLsMJ@babar.db.elephantsql.com/hgwcsfjz" -verbose up
+	migrate -path db/migration -database "postgres://jiyjectu:rw96Pl0VfOn5mp2T3fG1vKHEKFMJdAVg@babar.db.elephantsql.com/jiyjectu" -verbose up
 
 migratedown:
-	migrate -path db/migration -database "postgres://hgwcsfjz:KrQGnHXbGTAuGetdYyb9HCkjduxRLsMJ@babar.db.elephantsql.com/hgwcsfjz" -verbose down
+	migrate -path db/migration -database "postgres://jiyjectu:rw96Pl0VfOn5mp2T3fG1vKHEKFMJdAVg@babar.db.elephantsql.com/jiyjectu" -verbose down
 
 sqlc:
 	sqlc generate
