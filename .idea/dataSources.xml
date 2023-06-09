@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="postgres" uuid="9fe2e199-4ccd-40be-a95a-4ce3a906aeff">
+    <data-source source="LOCAL" name="postgresql" uuid="d35ccf07-ce9f-4aad-beed-0f1b90e4768f">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://babar.db.elephantsql.com:5432/jiyjectu</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/simple_bank</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
