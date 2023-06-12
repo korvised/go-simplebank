@@ -23,3 +23,13 @@
     // push sql
     migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verose up
 ```
+
+# *** MOCK ***
+```shell
+    // after install golang mock.
+    // if can run below command run this command first
+      go get github.com/golang/mock/    
+    // init
+     mockgen -package mcokdb -destination db/mock/store.go  github.com/korvised/go-simplebank/db/sqlc Store
+
+```
