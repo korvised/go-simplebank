@@ -7,6 +7,10 @@
     migrate create -ext sql -dir db/migration -seq init_schema
     // push sql
     migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verose up
+    
+    // add new table
+    migrate create -ext sql -dir db/migration -seq add_users
+
 ```
 
 # *** Makefile ***
