@@ -6,8 +6,10 @@ import (
 	db "github.com/korvised/go-simplebank/db/sqlc"
 	"github.com/korvised/go-simplebank/util"
 	"github.com/lib/pq"
+	"github.com/stretchr/testify/require"
 	"log"
 	"net/http"
+	"testing"
 	"time"
 )
 
@@ -123,4 +125,18 @@ func (server *Server) loginUser(ctx *gin.Context) {
 	}
 
 	ctx.JSON(http.StatusOK, rps)
+}
+
+func randomUser(t *testing.T) (user db.User, password string) {
+	password = util.RandomString(6)
+	hashedPassword, err := util.HashPassword(password)
+	require.NoError(t, err)
+
+	user = db.User{
+		Username:       util.RandomOwner(),
+		HashedPassword: hashedPassword,
+		FullName:       util.RandomOwner(),
+		Email:          util.RandomEmail(),
+	}
+	return
 }
