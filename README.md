@@ -10,6 +10,9 @@
     
     // add new table
     migrate create -ext sql -dir db/migration -seq add_users
+    
+    // migate database add add_sessions
+    migrate create -ext sql -dir db/migration -seq add_sessions
 
 ```
 
