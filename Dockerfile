@@ -5,7 +5,7 @@ COPY . .
 RUN	go build -o main main.go
 
 # * Run stage
-FROM alpine:latest
+FROM alpine:latest as Runner
 WORKDIR /app
 COPY --from=builder /app/main .
 COPY app.env .
