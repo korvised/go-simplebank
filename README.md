@@ -14,12 +14,14 @@
 ```
 
 # *** Makefile ***
+
 ```shell
     // run command in Makefile
     make createdb
 ```
 
 # *** SQLC ***
+
 ```shell
     // sql genter crud go function
     // init
@@ -29,6 +31,7 @@
 ```
 
 # *** MOCK ***
+
 ```shell
     // after install golang mock.
     // if can run below command run this command first
@@ -36,4 +39,18 @@
     // init
      mockgen -package mcokdb -destination db/mock/store.go  github.com/korvised/go-simplebank/db/sqlc Store
 
+```
+
+# *** SH is wait for another process success ***
+
+```shell
+# execute 
+chmod +x wait-for.sh
+```
+
+# *** Docker Compose ***
+
+```shell
+      docker compose up
+      docker compose down
 ```
