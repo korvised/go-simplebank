@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Simple Bank API",
-    "version": "1.2",
+    "version": "1.0",
     "contact": {
       "name": "Tech School",
       "url": "https://github.com/techschool",
@@ -23,6 +23,8 @@
   "paths": {
     "/v1/create_user": {
       "post": {
+        "summary": "Sign In",
+        "description": "Use this API to sign up",
         "operationId": "SimpleBank_CreateUser",
         "responses": {
           "200": {
@@ -55,6 +57,8 @@
     },
     "/v1/longin_user": {
       "post": {
+        "summary": "Sing In",
+        "description": "Use this API to sign in and get tokens",
         "operationId": "SimpleBank_LoginUser",
         "responses": {
           "200": {
